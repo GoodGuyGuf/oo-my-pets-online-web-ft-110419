@@ -52,7 +52,7 @@ attr_reader :name, :species, :pets, :mood
 
   def sell_pets
   
-  
+
 
   def list_pets
     "I have #{dogs.count} dog(s), and #{cats.count} cat(s)."
