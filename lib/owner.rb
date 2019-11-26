@@ -43,7 +43,7 @@ attr_reader :name, :species, :pets
   end
 
   def walk_dogs
-    @mood = "happy"
+    
   end
 
   def feed_cats
