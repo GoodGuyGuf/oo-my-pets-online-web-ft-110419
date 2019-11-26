@@ -53,7 +53,6 @@ attr_reader :name, :species, :pets, :mood
   def sell_pets
     Cat.all.select{|cat| cat.mood = "nervous"}.reject!
     Dog.all.select{|dog| dog.mood = "nervous"}.reject!
-    binding.pry
   end
 
 
