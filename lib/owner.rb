@@ -35,6 +35,7 @@ attr_reader :name, :species
   end
 
   def buy_cat(name)
+    binding.pry
     bought_cat = Cat.new(name, self)
     cats << bought_cat
     end
