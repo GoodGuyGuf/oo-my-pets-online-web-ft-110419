@@ -38,7 +38,7 @@ attr_reader :name, :species
     binding.pry
     bought_cat = Cat.new(name, self)
     Owner.each do |cat|
-      cat.owner = bought_cat
+      cat.owner == bought_cat
     end
     end
 
