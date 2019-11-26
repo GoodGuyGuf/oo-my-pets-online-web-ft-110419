@@ -51,8 +51,8 @@ attr_reader :name, :species, :pets, :mood
   end
 
   def sell_pets
-    Cat.all.select{|cat, owner| owner == nil && cat.mood = "nervous"}
-    Dog.all.select{|dog, owner| owner == nil && dog.mood = "nervous"}
+    Cat.all.select{|cat| cat.owner == nil && cat.mood = "nervous"}
+    Dog.all.select{|dog| dog.owner == nil && dog.mood = "nervous"}
     binding.pry
   end
 
