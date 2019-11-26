@@ -59,6 +59,7 @@ attr_reader :name, :species, :pets, :mood
       if dog.owner == nil
       dog.mood = "nervous"
   end
+end
 
   def list_pets
     "I have #{dogs.count} dog(s), and #{cats.count} cat(s)."
