@@ -51,13 +51,8 @@ attr_reader :name, :species, :pets, :mood
   end
 
   def sell_pets
-    Cat.all.select do |cat|
-        cat.mood = "nervous"
-      
-    end
-  end
-
-
+  
+  
 
   def list_pets
     "I have #{dogs.count} dog(s), and #{cats.count} cat(s)."
