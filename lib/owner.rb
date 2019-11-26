@@ -54,12 +54,14 @@ attr_reader :name, :species, :pets, :mood
     Cat.all.select do |cat|
       if cat.owner == nil
         cat.mood = "nervous"
+      end
+    end
     Dog.all.select do |dog|
       if dog.owner == nil
       dog.mood = "nervous"
+    end
   end
-end
-end
+
 
   def list_pets
     "I have #{dogs.count} dog(s), and #{cats.count} cat(s)."
