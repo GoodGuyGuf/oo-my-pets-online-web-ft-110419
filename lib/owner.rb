@@ -35,7 +35,6 @@ attr_reader :name, :species
   end
 
   def buy_cat(name)
-    binding.pry
     bought_cat = Cat.new(name, self)
     Owner.each do |cat|
       cat.owner == bought_cat
