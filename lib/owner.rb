@@ -54,11 +54,9 @@ attr_reader :name, :species, :pets, :mood
     Cat.all.select do |cat|
         cat.mood = "nervous"
       end
-    end
     Dog.all.select do |dog|
       dog.mood = "nervous"
     end
-  end
   end
 
 
