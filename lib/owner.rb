@@ -58,6 +58,8 @@ attr_reader :name, :species, :pets, :mood
     Dog.all.select do |dog|
       if dog.owner != self
       dog.mood = "nervous"
+    end
+  end
 
 
 
