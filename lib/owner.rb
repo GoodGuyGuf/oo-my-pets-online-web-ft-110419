@@ -1,12 +1,13 @@
 require 'pry'
 class Owner
 
-attr_reader :name, :species
+attr_reader :name, :species, :pets
 @@all = []
 
   def initialize(name)
     @name = name
     @species = "human"
+    @pets = []
     @@all << self
   end
 
