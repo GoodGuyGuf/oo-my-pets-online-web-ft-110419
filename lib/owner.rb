@@ -43,7 +43,7 @@ attr_reader :name, :species, :pets
   end
 
   def walk_dogs
-    
+    binding.pry
   end
 
   def feed_cats
