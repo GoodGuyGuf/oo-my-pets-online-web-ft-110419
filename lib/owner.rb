@@ -51,10 +51,10 @@ attr_reader :name, :species, :pets, :mood
   end
 
   def sell_pets
-    Cat.all.select do |cat| 
+    Cat.all.select do |cat|
       if cat.owner == nil
         cat.mood = "nervous"
-    Dog.all.select do |dog| 
+    Dog.all.select do |dog|
       dog.mood = "nervous"
   end
 
