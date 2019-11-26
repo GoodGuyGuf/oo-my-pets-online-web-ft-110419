@@ -51,8 +51,8 @@ attr_reader :name, :species, :pets, :mood
   end
 
   def sell_pets
-    Cat.all.select{|cat| remove_instance_variable(:@owner) && cat.mood = "nervous"}
-    Dog.all.select{|dog| remove_instance_variable(:@owner) && dog.mood = "nervous"}
+    Cat.all.select{|cat| cat.owner != self && cat.mood = "nervous"}
+    Dog.all.select{|dog| dog.owner != self && dog.mood = "nervous"}
   end
 
 
