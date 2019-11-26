@@ -53,6 +53,8 @@ attr_reader :name, :species, :pets, :mood
   def sell_pets
     Cat.all.select{|cat| cat.mood = "nervous"}
     Dog.all.select{|dog| dog.mood = "nervous"}
+    Cat.all.select{|cat| cat.owner = nil}
+    Dog.all.select{|dog| dog.owner = nil}
   end
 
 
