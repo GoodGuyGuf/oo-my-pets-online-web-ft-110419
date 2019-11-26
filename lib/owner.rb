@@ -47,7 +47,7 @@ attr_reader :name, :species, :pets, :mood
   end
 
   def feed_cats
-
+    Cat.all.select{|cat| cat.mood = "happy"}
   end
 
   def sell_pets
