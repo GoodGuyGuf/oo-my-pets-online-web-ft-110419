@@ -42,8 +42,8 @@ attr_reader :name, :species, :pets
     Dog.new(name, self)
   end
 
-  def walk_dogs(mood)
-    @mood = mood
+  def walk_dogs
+    @mood = "happy"
   end
 
   def feed_cats
