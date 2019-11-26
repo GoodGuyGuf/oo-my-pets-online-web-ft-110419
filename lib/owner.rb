@@ -56,6 +56,7 @@ attr_reader :name, :species, :pets, :mood
         cat.mood = "nervous"
       end
     end
+  end
 
 
 
