@@ -43,7 +43,7 @@ attr_reader :name, :species, :pets, :mood
   end
 
   def walk_dogs
-    Dog.all.select{|dog| dog.mood == self}
+    Dog.all.select{|dog| dog.mood == "happy"}
   end
 
   def feed_cats
